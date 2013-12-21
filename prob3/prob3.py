@@ -4,7 +4,7 @@ MAX_VAL = 600851475143
 
 # Inefficient, but should solve within 2 mins.
 def is_prime(n):
-    for x in range(2, int(sqrt(n))):
+    for x in range(2, int(sqrt(n))+1):
         if n % x == 0:
             return False
     return True
